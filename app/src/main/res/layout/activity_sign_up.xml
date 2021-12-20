@@ -1,0 +1,111 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:background="@drawable/ic_launcher"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/txtViewCenter"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Todo App"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="To get anything work, please have an account in order to continue!"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/editTextUser"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Enter username"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp" />
+
+        <EditText
+            android:id="@+id/editReTextPassword"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Re-entering password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#3F51B5"
+            android:text="Hit the deck"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="These credentials won't be collected to any other places">
+        </TextView>
+    </LinearLayout>
+
+
+</ScrollView>

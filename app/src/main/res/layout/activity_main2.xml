@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout tools:context=".Homepage" android:orientation="vertical" android:padding="16dp" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText android:padding="12dp" android:layout_height="wrap_content" android:layout_width="match_parent" android:hint="Enter your todo work" android:id="@+id/edit_text"/>
+
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="8dp">
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/bt_add" android:text="Add" android:layout_marginRight="5dp" android:layout_weight="1"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/bt_reset" android:text="Reset" android:layout_weight="1"/>
+
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView android:layout_height="match_parent" android:layout_width="match_parent" android:id="@+id/recycler_view" android:layout_marginTop="8dp" tools:listitem="@layout/list_row_main"/>
+
+</LinearLayout>
